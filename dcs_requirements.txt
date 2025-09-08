@@ -1,0 +1,9 @@
+1. Change the Color of Header & Footer.  Others Section Background Color change will best for this
+2. Set All Certificates with title
+3. Replace or remove previous Image and set only Digital Communication System Images
+4. Remove client & Exeibition Menu
+5. Add Team Menu : where add Leadership data from pdf with  No Face  images
+6. Add Projects Menu : Set only Projects Picture and details
+7. Products will according provide documents and related
+8. In Profile Menu showing formation from pdf documents Like as : Annual Revenue , Annual Import , Established Year , No of Employees 
+9. Should be rendering from Product View page to another Menu.
