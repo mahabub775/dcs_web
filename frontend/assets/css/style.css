@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&display=swap');
 
 :root {
-    --bs-primary: #6db395;
-    --bs-secondary: #6ab596;
+    --bs-primary: #2b3553; /*#6db395;*/
+    --bs-secondary:  #31384d; /*#6ab596;*/
     --bs-light: #ecf2f6;
     --bs-dark: #333333;
     /* --bs-text: #454c7e; */
