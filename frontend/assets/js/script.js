@@ -171,8 +171,8 @@ $(function () {
                 adaptiveHeight: adaptiveHeight,
                 slidesToScroll: 1,
                 autoplaySpeed: timeout,
-                prevArrow: '<button type="button" class="slick-prev"><i class="far fa-chevron-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="far fa-chevron-right"></i></button>',
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
                 responsive: [{
                         breakpoint: 1500,
                         settings: {

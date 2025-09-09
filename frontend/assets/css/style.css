@@ -2339,3 +2339,9 @@ input::-webkit-inner-spin-button {
 .side-menu ul li ul.dropdown li {
     display: block;
 }
+
+
+.slick-dots li button {
+  font-size: 0;
+  color: transparent;
+}
