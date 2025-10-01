@@ -36,6 +36,29 @@ var menus=[
     }
 ];
 
+var sliders=[
+    {
+        sl:1,
+        name:'Welcome to Digital Communication System (DCS).',
+        url:'backend/img/slider/Slider1.jpeg'
+    },
+    {
+        sl:2,
+        name:'Welcome to Digital Communication System (DCS).',
+        url:'backend/img/slider/Slider2.jpeg'
+    },
+    {
+        sl:3,
+        name:'Welcome to Digital Communication System (DCS).',
+        url:'backend/img/slider/Slider3.jpeg'
+    },
+    {
+        sl:4,
+        name:'Welcome to Digital Communication System (DCS).',
+        url:'backend/img/slider/Slider4.jpeg'
+    }
+];
+
 var Home=[
     {
         id:1,
@@ -49,7 +72,7 @@ var Aboutus=[
     {
         id:1,
         name:'Aboutus',
-        title:'',
+        title:'About Us',
         body:'<p>Digital Communication System (DCS) offer goods and services at prices and conditions agreed by both the parties. Digital Communication System (DCS) is 25 (Plus) years of experience on indenting and supply, our team can provide accurate price of products as well as qualified producers, eliminating all the usual sourcing headaches and saving your business time and money. We are very active in the defense (Directorate General Defense Purchases) as well as other government and semi government organizations in Bangladesh. Digital Communication System (DCS) provides suitable technical service and customer assistance with respect to the goods in the territory on mutually agreed terms and conditions. Information about our progress, market situation, demands, sales, price trends for assortments, outlook for sales, latest customs regulations, packaging, advertising and other novelties. Clients are required to keep us informed about the quality of products they tend to place in the market by making samples, pamphlets, price lists, service instructions, reference lists, certificates etc available to us.<br>Digital Communication System (DCS) has a solid history in various lines of trading business. DCS has got a solid toehold in multifarious activities as a consequence of its dynamic supplying capabilities.<br><strong>We are officially enlisted with the Directorate General Defense Purchase (DGDP) to operate in both local and foreign currencies.</strong><br>In addition, we are authorized to serve as a commissioning agency and indenting partner for DGDP Acting as trusting local agent, we represent overseas principal sellers and manufacturers from the USA, Czech Republic, Germany, Slovenia, Poland, UK, turkey, south Korea, china, India, and many more.</p>'
     }
 ];
@@ -103,12 +126,12 @@ var product=[
     },{
         id:1,
         groupName:'Group – 11',
-        productName:': Construction equipment/ material, Hardware and general engineering stores.'
+        productName:'Construction equipment/material, Hardware and general engineering stores.'
     },
     {
         id:2,
         groupName:'Group – 12',
-        productName:': Paints, Chemicals and packing materials. '
+        productName:'Paints, Chemicals and packing materials. '
     }
 ];
 
@@ -116,97 +139,439 @@ var projects=[
     {
         id:1,
         Title:'Radio Communication',
-        description:`1. VHF/HF and UHF Manpack and Vehicular Military Radios and Spare Parts
-                    2. Hand-to-Hand Radio Set
-                    3. VHF/UHF Walkie-Talkie Radio Set (DMR)
-                    4. Repeater and Base Station`,
+        description:[
+            {
+                id:1,
+                title:'VHF/HF and UHF Manpack and Vehicular Military Radios and Spare Parts',
+                img:'backend/img/project/UHF Microwave Link.jpeg',
+                url:'http://www.al-wireless.com/idu-odu-links',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Hand-to-Hand Radio Set',
+                img:'backend/img/project/Head to Head Radio.jpeg',
+                url:'https://www.sat.com.na/shop/tactical-products-radios-6/hornet-prr1-mimomanet-sdr-radio-56086',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'VHF/UHF Walkie-Talkie Radio Set (DMR)',
+                 img:'backend/img/project/VHF Radio.jpeg',
+                url:'https://www.sat.com.na/shop/tactical-products-2/rad-leo1-leopard-1-wideband-military-sdr-radio-56082',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'Repeater and Base Station',
+                img:'backend/img/project/Repeater.jpeg',
+                url:'https://global.belfone.com/product-view/professional-repeater-module-bf-tr900',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:2,
         Title:'Microwave',
-        description:`1. UHF Microwave Link with Spare Parts
-                    2. Microwave Self-Supporting Tower (Different Sizes)
-                    3. Microwave Guy Tower
-                    4. Earthing`,
+        description:[
+            {
+                id:1,
+                title:'UHF Microwave Link with Spare Parts',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Microwave Self-Supporting Tower (Different Sizes)',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Microwave Guy Tower',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'Earthing',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:3,
         Title:'Communication',
-        description:``,
+        description:[],
     },
     {
         id:4,
         Title:'Arms and Ammunition',
-        description:`1. Light Arms
-                        o 9mm Pistol
-                        o 12 Bore Shotgun
-                        o Sniper Rifle 7.62mm
-                        o Assault Rifle 7.62mm
-                        o SMG
-                    2. Heavy Arms
-                        o APC
-                        o 155mm Howitzer
-                        o Armored Military Vehicle
-                    3. Cartridge Arms
-                        o 9x19mm
-                        o 7.62mm
-                        o 45mm
-                        o 105mm
-                        o 125mm
-                        o 155mm`,
+        description:
+        [
+            {
+                id:1,
+                title:'Light Arms',
+                img:'',
+                subDescription:[
+                    {
+                        id:1,
+                        title:'9mm Pistol',
+                        img:'backend/img/project/9mm Pistol.jpeg',
+                        url:'https://tisasarms.com/en/category/pistols/polymer-series/px-9-carry-black'
+                    },
+                    {
+                        id:2,
+                        title:'12 Bore Shotgun',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:3,
+                        title:'Sniper Rifle 7.62mm',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:4,
+                        title:'Assault Rifle 7.62mm',
+                        url:'',
+                        img:''
+                    },{
+                        id:5,
+                        title:'SMG',
+                        url:'',
+                        img:''
+                    }
+                ]
+            },
+            {
+                id:2,
+                title:'Heavy Arms',
+                img:'',
+                subDescription:[
+                    {
+                        id:1,
+                        title:'APC',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:2,
+                        title:'155mm Howitzer',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:3,
+                        title:'Armored Military Vehicle',
+                        url:'',
+                        img:''
+                    }
+                ]
+            },
+            {
+                id:3,
+                title:'Cartridge Arms',
+                img:'',
+                subDescription:[
+                    {
+                        id:1,
+                        title:'9x19mm',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:2,
+                        title:'7.62mm',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:3,
+                        title:'45mm',
+                        url:'',
+                        img:''
+                    },{
+                        id:4,
+                        title:'105mm',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:5,
+                        title:'125mm',
+                        url:'',
+                        img:''
+                    },
+                    {
+                        id:6,
+                        title:'155mm',
+                        url:'',
+                        img:''
+                    }
+                ]
+            }
+        ]
     },
     {
         id:5,
         Title:'Safety Equipment',
-        description:`• Bulletproof Helmet and Jacket
-                    • Explosive Detector
-                    • Mine Detector
-                    • Portable X-Ray Machine
-                    • Hook and Line Set
-                    • EOD Toolkit
-                    • CIED Robot
-                    • Bomb Jammer
-                    • EOD Suit`,
+        description:[
+            {
+                id:1,
+                title:'Bulletproof Helmet and Jacket',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Explosive Detector',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Mine Detector',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'Portable X-Ray Machine',
+                img:'',
+                url:'',
+                subDescription:[]
+            },{
+                id:5,
+                title:'Hook and Line Set',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:6,
+                title:'EOD Toolkit',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:7,
+                title:'CIED Robot',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:8,
+                title:'Bomb Jammer',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:9,
+                title:'EOD Suit',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:6,
         Title:'Military Vehicles',
-        description:`• Fire Crash Tender
-                    • Air Crew Refueler
-                    • Forklift
-                    • Towing Tractor
-                    • GPU`,
+        description:[
+            {
+                id:1,
+                title:'Fire Crash Tender',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Air Crew Refueler',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Forklift',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'Towing Tractor',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'GPU',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:7,
         Title:'Aircraft',
-        description:`1. Aircraft (F-7, PT-6, K-8W, Yak-130, An-32 &amp; C-130) Engine and Airframe Spare Parts
-                    2. Avionics for Aircraft
-                    3. Engine and Aircraft Overhauling`,
+        description:[
+            {
+                id:1,
+                title:'Aircraft (F-7, PT-6, K-8W, Yak-130, An-32 &amp; C-130) Engine and Airframe Spare Parts',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Avionics for Aircraft',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Engine and Aircraft Overhauling',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:8,
         Title:'Helicopter',
-        description:`1. Helicopter Engine and Frame Spare Parts (MI-17/171, Bell-212, 206, 205, L-410, etc.)
-                    2. Helicopter Avionics
-                    3. Helicopter Engine and Overhauling`,
+        description:[
+            {
+                id:1,
+                title:'Helicopter Engine and Frame Spare Parts (MI-17/171, Bell-212, 206, 205, L-410, etc.)',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Helicopter Avionics',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Helicopter Engine and Overhauling',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     },
     {
         id:9,
         Title:'Others',
-        description:`• Field Telephone Cables
-                    • Networking Equipment
-                    • Military Laptop
-                    • GPS
-                    • Night Vision Goggles
-                    • Night Vision Monocular
-                    • Aiming Circle 1mm
-                    • Aviation Compass
-                    • High-Protection Goggles
-                    • Microwave Trainer
-                    • Simulator (Mi-17, Firing, etc.)
-                    • Speedboat, etc.
-                    `,
+        description:
+        [
+            {
+                id:1,
+                title:'Field Telephone Cables',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:2,
+                title:'Networking Equipment',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:3,
+                title:'Military Laptop',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:4,
+                title:'GPS',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:5,
+                title:'Night Vision Goggles',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:6,
+                title:'Night Vision Monocular',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:7,
+                title:'Aiming Circle 1mm',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:8,
+                title:'Aviation Compass',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:9,
+                title:'High-Protection Goggles',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:10,
+                title:'Microwave Trainer',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:11,
+                title:'Simulator (Mi-17, Firing, etc.)',
+                img:'',
+                url:'',
+                subDescription:[]
+            },
+            {
+                id:12,
+                title:'Speedboat, etc.',
+                img:'',
+                url:'',
+                subDescription:[]
+            }
+        ]
     }
 ]
 
@@ -215,103 +580,103 @@ var Certificates=[
         id:1,
         Title:'A S M FOZLA E-LAHE TAX CERTIFICATE 2024-2025',
         year:'2024-2025',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/A S M FOZLA E-LAHE TAX CERTIFICATE 2024-2025_page-0001.jpg`,
     },
     {
         id:2,
         Title:'Aviation Enlistment',
         year:'2023-2024',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/Aviation Enlistment_page-0001.jpg`,
     },
     {
         id:3,
         Title:'BIN DCS',
         year:'2023',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/BIN DCS_page-0001.jpg`,
     },
     {
         id:4,
         Title:'BOF Certificate',
         year:'2018',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/BOF Certificate_page-0001.jpg`,
     },
     {
         id:5,
         Title:'DCS Erc License[1]',
         year:'2023-2024',
-        imgLink:``,
+       imgLink:`backend/img/Certificate/DCS Erc License[1]_page-0001.jpg`,
     },
     {
         id:6,
         Title:'DCS IRC',
         year:'2024-2025',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/DCS IRC_page-0001.jpg`,
     },
     {
         id:7,
-        Title:'DCS Trade lice 2025 1',
+        Title:'DCS Trade licence 2025 1',
         year:'2022-2023',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/DCS Trade lice 2025 1_page-0001.jpg`,
     },
     {
         id:8,
-        Title:'DCS Trade lice 2025 2',
+        Title:'DCS Trade licence 2025 2',
         year:'2025-2026',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/DCS Trade lice 2025 2_page-0001.jpg`,
     },
     {
         id:9,
         Title:'Indenting membership[1]',
         year:'2023',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/Indenting membership[1]_page-0001.jpg`,
     },
     {
         id:10,
         Title:'Monogram',
         year:'223-2024',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/Monogram.jpeg`,
     },
     {
         id:11,
         Title:'NSSD Supplier ID',
         year:'2024',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/NSSD Supplier ID.jpeg`,
     },
     {
         id:12,
         Title:'TIN Fozle E-Lahi',
         year:'2013',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/TIN Fozle E-Lahi.jpeg`,
     },
     {
         id:13,
         Title:'Trade Licance Re-New',
         year:'2025-2026',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/Trade Licance Re-New.jpeg`,
     },
     {
         id:14,
         Title:'Trade License',
         year:'2022-2023',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/Trade License.jpeg`,
     },
     {
         id:15,
         Title:'CAAB Certificate',
         year:'2021',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/CAAB Certificate.jpeg`,
     },
     {
         id:16,
         Title:'CAAB Thikadar',
         year:'',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/CAAB Thikadar.jpeg`,
     },
     {
         id:17,
         Title:'CAAB Thikadar2',
         year:'',
-        imgLink:``,
+        imgLink:`backend/img/Certificate/CAAB Thikadar2.jpeg`,
     }
 ]
 var Clients=[
