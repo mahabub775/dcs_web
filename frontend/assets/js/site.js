@@ -1,7 +1,15 @@
 ///frontend/assets/js/db.js
 $(document).ready(function(){
     //console.log(menus);
+    $('#bdOffice').prop('checked',false);
+    $('#conOffice1').prop('checked',false);
+    $('#conOffice2').prop('checked',false);
+    $('#bdMap').hide();
+    $('#HongKongMap').hide();
+    $('#TurkeyMap').hide();
+
     RendarMenu();
+     client();
     var path = window.location.pathname;
     console.log(path);
     if(path.length<=1 || path.toLowerCase().indexOf('/index.html') > -1){
@@ -22,6 +30,10 @@ $(document).ready(function(){
     else if(path.toLowerCase().indexOf('/certificate.html') > -1){
         Certificate();        
     }
+    else if(path.toLowerCase().indexOf('/contact.html') > -1){
+        $('#bdOffice').prop('checked',true); 
+        $('#bdMap').show();
+    }
 });
 
 function RendarMenu(){
@@ -38,8 +50,10 @@ function RendarMenu(){
     let mblMeny=``;
 
     menus.forEach((v,i)=>{
-        strmnu+=`<li class="menu-list-item"><a class="item-link" href="${v.url}">${v.name}</a></li>`;   
-        mblMeny+=`<li class="list-item"><a class="menu-link" href="${v.url}">${v.name}</a></li>`;     
+        if (v.isActive) {
+            strmnu+=`<li class="menu-list-item"><a class="item-link" href="${v.url}">${v.name}</a></li>`;   
+            mblMeny+=`<li class="list-item"><a class="menu-link" href="${v.url}">${v.name}</a></li>`;     
+        }
     });
 
     strmnu+=`</ul>`;
@@ -203,6 +217,31 @@ function carousel() {
  }
  //#endregion carousel
 
+ //#region Slider
+function client(){
+    let slider='';
+    $('#partnerItem').html('');
+     Clients.forEach((v,i)=>{
+        if(v.isActive){
+        slider+=`<div class="single-item p-sm-2 p-1">
+                    <div class="team-wrap">
+                        <div class="image-wrap">
+                            <img src="${v.imgLink}" height="250px" alt="Team">
+                        </div>                        
+                    </div>
+                </div>`;  
+        } 
+    });
+     $('#partnerItem').html(slider);
+     if ($('#partnerItem').hasClass('slick-initialized')) {
+      $('#partnerItem').slick('unslick');
+    }
+    carousel();
+
+}
+
+ //#endregion carousel
+
  //#region Home
  function home(){
     
@@ -336,3 +375,27 @@ function carousel() {
     
 }
  //#endregion Certificate
+
+//#region Contact
+ function HideMap(type){
+    //alert(type);
+    $('#bdOffice').prop('checked',false);
+    $('#conOffice1').prop('checked',false);
+    $('#conOffice2').prop('checked',false);
+    $('#bdMap').hide();
+    $('#HongKongMap').hide();
+    $('#TurkeyMap').hide();
+    if(type=='BD'){
+        $('#bdOffice').prop('checked',true);
+        $('#bdMap').show();
+    }
+    if(type=='HK'){
+        $('#conOffice1').prop('checked',true);
+        $('#HongKongMap').show();
+    }
+    if(type=='TK'){
+        $('#conOffice2').prop('checked',true);
+        $('#TurkeyMap').show();
+    }
+ }
+//#endregion Contact

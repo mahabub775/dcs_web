@@ -1816,7 +1816,7 @@ input::-webkit-inner-spin-button {
     bottom: 0;
     background-color: #000000;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.3;
 }
 .slider-overlay-text{
     position: absolute;
@@ -2151,7 +2151,7 @@ input::-webkit-inner-spin-button {
 }
 
 .team-wrap .team-content .team-title {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: #C5C2C2;
     text-transform: uppercase;

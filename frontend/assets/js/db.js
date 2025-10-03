@@ -2,39 +2,121 @@ var menus=[
     {
         sl:1,
         name:'Home',
-        url:'Home.html'
+        url:'Home.html',
+        isActive:true,
     },
     {
         sl:2,
         name:'About us',
+        isActive:true,
         url:'Aboutus.html'
     },
     {
         sl:3,
         name:'product',
+        isActive:true,
         url:'product.html'
     },
     {
         sl:4,
         name:'Project',
+        isActive:true,
         url:'project.html'
     },
     {
         sl:5,
         name:'Certificate',
+        isActive:true,
         url:'Certificate.html'
     },
     {
         sl:6,
         name:'Clint',
+        isActive:false,
         url:'Clint.html'
     },
     {
         sl:7,
         name:'Contact',
+        isActive:true,
         url:'Contact.html'
     }
 ];
+
+var Clients=[
+    {
+        id:1,
+        Title:'DGDP',
+        imgLink:`backend/img/client_image/1.png`,
+        isActive:true,
+    },
+    {
+        id:2,
+        Title:'NSSD',
+        imgLink:`backend/img/client_image/2.png`,
+        isActive:true,
+    },
+    {
+        id:3,
+        Title:'COD',
+        imgLink:`backend/img/client_image/3.png`,
+        isActive:true,
+    },
+    {
+        id:4,
+        Title:'BOF',
+        imgLink:`backend/img/client_image/4.png`,
+        isActive:true,
+    },
+    {
+        id:5,
+        Title:'Coast Guard',
+        imgLink:`backend/img/client_image/5.png`,
+        isActive:true,
+    },
+    {
+        id:6,
+        Title:'Bangladesh Police',
+        imgLink:`backend/img/client_image/6.png`,
+        isActive:true,
+    },
+    {
+        id:7,
+        Title:'BGB',
+        imgLink:`backend/img/client_image/7.png`,
+        isActive:true,
+    },
+    {
+        id:8,
+        Title:'Bangladesh Ansar',
+        imgLink:`backend/img/client_image/8.png`,
+        isActive:true,
+    },
+    {
+        id:9,
+        Title:'Fire Service &amp; Civil Defence',
+        imgLink:`backend/img/client_image/9.png`,
+        isActive:true,
+    },
+    {
+        id:10,
+        Title:'BIWTA',
+        imgLink:`backend/img/client_image/10.png`,
+        isActive:true,
+    },
+    {
+        id:11,
+        Title:'Civil Aviation',
+        imgLink:`backend/img/client_image/11.png`,
+        isActive:true,
+    },
+    {
+        id:12,
+        Title:'Bangladesh Aeronautical University',
+        imgLink:``,
+        isActive:false,
+    },
+]
 
 var sliders=[
     {
@@ -679,68 +761,7 @@ var Certificates=[
         imgLink:`backend/img/Certificate/CAAB Thikadar2.jpeg`,
     }
 ]
-var Clients=[
-    {
-        id:1,
-        Title:'DGDP',
-        imgLink:``,
-    },
-    {
-        id:2,
-        Title:'NSSD',
-        imgLink:``,
-    },
-    {
-        id:3,
-        Title:'COD',
-        imgLink:``,
-    },
-    {
-        id:4,
-        Title:'BOF',
-        imgLink:``,
-    },
-    {
-        id:5,
-        Title:'Coast Guard',
-        imgLink:``,
-    },
-    {
-        id:6,
-        Title:'Bangladesh Police',
-        imgLink:``,
-    },
-    {
-        id:7,
-        Title:'BGB',
-        imgLink:``,
-    },
-    {
-        id:8,
-        Title:'Bangladesh Ansar',
-        imgLink:``,
-    },
-    {
-        id:9,
-        Title:'Fire Service &amp; Civil Defence',
-        imgLink:``,
-    },
-    {
-        id:10,
-        Title:'BIWTA',
-        imgLink:``,
-    },
-    {
-        id:11,
-        Title:'Civil Aviation',
-        imgLink:``,
-    },
-    {
-        id:12,
-        Title:'Bangladesh Aeronautical University',
-        imgLink:``,
-    },
-]
+
 
 var ContactUS=[
     {
